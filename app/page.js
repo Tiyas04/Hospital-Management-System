@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div
@@ -12,9 +14,12 @@ export default function Home() {
           <span className="font-semibold">hospital management</span> needs.
           Streamline, organize, and save lives with efficiency.
         </p>
-        <button className="text-2xl text-white p-3 m-2 border border-white/10 rounded-3xl shadow-2xl bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 cursor-pointer hover:scale-105 transition-all duration-300">
-          Get Started
-        </button>
+        <Link href="/signup-doctor"><button className="text-2xl text-white p-3 m-2 border border-white/10 rounded-3xl shadow-2xl bg-gradient-to-br from-red-600 via-red-500 to-red-400 cursor-pointer hover:scale-105 transition-all duration-300">
+         Sign Up as Doctor
+        </button></Link>
+        <Link href="/signup-patient"><button className="text-2xl text-white p-3 m-2 border border-white/10 rounded-3xl shadow-2xl bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 cursor-pointer hover:scale-105 transition-all duration-300">
+          Sign Up as Patient
+        </button></Link>
       </div>
       <p className="absolute bottom-2 text-white/70 text-sm">
         Made by {""}
