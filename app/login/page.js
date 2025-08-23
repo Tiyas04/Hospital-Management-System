@@ -35,7 +35,7 @@ export default function SignupPatient() {
     return (
         <div className="flex flex-col bg-[url('https://www.softclinicsoftware.com/wp-content/uploads/2022/04/digital-composite-doctor-with-white-graph-with-flare-against-blurry-background-with-light-blue-overlay.jpg')] bg-cover bg-center h-screen w-screen justify-center items-center">
             <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-10 w-[90%] max-w-2xl shadow-2xl">
-                <h1 className="text-white font-bold text-4xl md:text-6xl text-center mb-4">Create Account</h1>
+                <h1 className="text-white font-bold text-3xl md:text-5xl text-center mb-4">Login to Your Account</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <input
                         type="text"
