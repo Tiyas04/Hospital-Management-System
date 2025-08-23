@@ -2,8 +2,11 @@
 import React, { useState } from "react"
 import axios from "axios"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export default function SignupPatient() {
+const router = useRouter()
+
   const [formData, setFormData] = useState({
     name: "",
     username: "",
@@ -31,7 +34,7 @@ export default function SignupPatient() {
         formData
       )
       console.log("Signup successful:", response.data)
-      alert("Signup successful! 🎉")
+      router.push("/dashboard")
     } catch (error) {
       console.error(error)
       alert("Signup failed. Please try again.")
