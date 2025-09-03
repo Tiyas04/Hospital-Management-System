@@ -10,7 +10,7 @@ export default function Dashboard() {
     const [Error, setError] = useState(null)
     const [Loading, setLoading] = useState(true)
 
-   useEffect = (() => {
+   useEffect(() => {
 
         const fetchdashboard = async (e) => {
             e.preventDefault()
