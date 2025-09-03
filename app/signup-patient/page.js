@@ -29,7 +29,7 @@ export default function SignupPatient() {
     e.preventDefault()
     try {
       const response = await axios.post(
-        `${NEXT_PUBLIC_BACKEND_URL}/api/v1/user/register`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1/user/register`,
         formData
       )
       console.log("Signup successful:", response.data)
